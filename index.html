@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./form.css">
+</head>
+<body>
+    <div id="form-container">
+        <h1>Form Input</h1>
+        <form action="" method="GET">
+            <input type="file" disabled>
+            <div class="seperator">
+                <label for="beans-selector">Choose Your Beans:</label>
+                <select name="" id="beans-selector" multiple required>
+                    <option value="House_Blend">House Blend</option>
+                    <option value="Shade_Grown_Bolivia_Supremo">Shade Grown Bolivia Supremo</option>
+                    <option value="Organic_Guatemala">Organic Guatemala</option>
+                    <option value="Kenya">Kenya</option>
+                </select>
+            </div>
+            <p>Type:</p>
+            <div class="seperator">
+                <input id="whole-beans" type="radio" value="Whole_Beans" name="beans"> <label for="whole-beans">Whole Beans</label>
+            </div>
+            <div class="seperator">
+                <input id="ground" type="radio" value="Ground" name="beans" checked> <label for="Ground">Ground</label>
+            </div>
+            <div class="seperator">
+                <label for="bags-counter">Number of Bags:</label>
+                <input type="number" value="1" min="1">
+            </div>
+            <div class="seperator">
+                <label for="arrive-date">Must Arrive By Date:</label>
+                <input id="arrive-date" type="date">
+            </div>
+            
+            <p>Extras:</p>
+            <div class="seperator">
+                <input id="gift-wrap" type="checkbox" value="Gift Wrap">
+                <label for="gift-wrap">Gift Wrap</label>
+            </div>
+            <div class="seperator">
+                <input id="catalog-order" type="checkbox" value="Gift Wrap"> 
+                <label for="gift-wrap">Gift Wrap</label>
+            </div>
+            <fieldset>
+                <legend>Location Data</legend>
+                <p>Ship To:</p>
+                <div id="shipping-details-container">
+                    <div class="seperator">
+                        <label for="shipping-receiver-name">Name:</label>
+                        <input id="shipping-receiver-name" type="text" placeholder="Ship To Whom?">
+                    </div>
+                    <div class="seperator">
+                        <label for="shipping-address">Address:</label>
+                        <input id="shipping-address" type="text" placeholder="Shipping Address">
+                    </div>
+                    <div class="seperator">
+                        <label for="shipping-city">City:</label>
+                        <input id="shipping-city" type="text" placeholder="Shipping To Which City">
+                    </div>
+                    <div class="seperator">
+                        <label for="shipping-state">State:</label>
+                        <input id="shipping-state" type="text" placeholder="Shipping To Which State">
+                    </div>
+                    <div class="seperator">
+                        <label for="shipping-zipcode">Zip:</label>
+                        <input id="shipping-zipcode" type="text" placeholder="Zipcode">
+                    </div>
+                    <div class="seperator">
+                        <label for="shipping-receiver-tel">Phone:</label>
+                        <input id="shipping-receiver-tel" type="tel" placeholder="Tel">                
+                    </div>
+                </div>    
+            </fieldset>
+            <div class="seperator">
+                <label for="comment-section">Customer Comments:</label>
+                <textarea name="comments" id="comment-section" cols="30" rows="10"></textarea>
+                <input id="submit" type="submit" value="Order Now">                
+            </div>
+        </form>
+    </div>
+    <div id="logo-container">
+        <img src="../Journal/imgs/dancing_kid.png" alt="">
+    </div>
+</body>
+</html>
